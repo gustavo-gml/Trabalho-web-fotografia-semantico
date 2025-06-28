@@ -1,65 +1,145 @@
 @charset "UTF-8";
-/*  regra geral . = class # = id */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap');
 
 *{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box; 
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-/*nav*/
-
-nav{
-    color: #D4AF37;
-    border-bottom: 2px solid #D4AF37;
-    padding: 3%;
-}
-
-.navlink{
-    float: right;
-    text-decoration: none;
-    color: #D4AF37;
-    
-}
-
-a:active{
-    color: #D4AF37;
-}
-
-a:visited{
-    color: #D4AF37;
 }
 
 body{
     background-color: black;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif ;
 }
-/*Entrada*/
 
-/* Form */
 
-#login_form{
+header{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px;
+    border-bottom: 3px solid #D4AF37;
+    margin-bottom: 3%;
+}
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+
+.clic-logo{
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: 3rem;
+    font-size:3rem;
+}
+
+.formulario{
+    color: black;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 3%;
+    max-width: 700px;
+    border-radius: 15px;
+
+}
+
+#login-do-form{
+    color: #D4AF37;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.form-class{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+   
     
 }
 
-    div{
-  background-color: white;
-  width: 40%;
-  margin: auto;
-  padding:7%;
-  border-radius: 8px;
+#div-lembrar{
+    padding: 2% 1%;
 }
 
-#titulo_login{
+.div-input{
+    width: 100%;
+    padding:1%;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    padding:4%;
+    margin: 4% 0%;
+    border-radius: 3px;
+    border: 1px solid gray;
+    font-size: 1.2rem;
+    
+}
+
+.div-button{
+    width: 100%;
+}
+
+.button-submit{
+ background-color: #D4AF37;
+ font-size: large;
+ margin: 0% 1%;
+ display: block;
+ border-radius: 3px;
+ padding: 5%;
+ width: 100%;
+ margin-bottom: 10px;
+cursor: pointer;
+border: 0px;
+}
+
+
+
+.label{
+  display: block;
+    padding-bottom: 2%;
+}
+
+.rodape{
+    background-color: #000000;
+    color: #FFFFFF;
     text-align: center;
-    color: #D4AF37;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2%;
+    
 }
 
+.cadastro-convidado{
+    margin: 0% 1%;
+   
+    
+    
+}
+.links{
+     text-decoration: none;
+     color:#D4AF37;
+     text-shadow: 1px 1px 1px black;
+}
 
- 
-
-
-
-
-
+@media (max-width: 1100px) {
+    .formulario{
+        transition: 1s;
+        width: 90%;
+    }
+ }
 
 

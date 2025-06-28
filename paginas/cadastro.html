@@ -9,12 +9,18 @@
 
 </head>
 <body>
+  <header>
+    <a href="entrada.html" class="clic-logo">Clic WR</a>
+  </header>
+
   <main>
     
-    <section class="cadmeio"><!--O atributo class especifica uma ou mais classes para o elemento HTML.-->
+    
+
+      <div class="formulario">
       <h1>Crie sua conta</h1>
     
-      <form action="../entrada.html" id="formcadastro">
+      <form action="../entrada.html" >
      
 
         <fieldset class="cadmeio"> <!--O elemento HTML<fieldset> é usado para agrupar elementos, assim como rótulos ( <label>), dentro de um formulário web.
@@ -32,13 +38,13 @@
         
         
           <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required  class="cadmeio"><br><br>
+          <input type="email" id="email" name="email" required  class="cadmeio">
         
       
         
         
           <label for="data" >Data de nascimento:</label>
-          <input type="date" id="data" name="data" required class="cadmeio"> <br><br>
+          <input type="date" id="data" name="data" required class="cadmeio"> 
         
         </fieldset>
         
@@ -47,24 +53,24 @@
             <legend class="cadmeio">Sexo</legend>
             
             <input type="radio" id="masculino" name="sexo" value="Masculino" required>
-            <label for="masculino">Masculino</label><br>
+            <label for="masculino">Masculino</label>
             <input type="radio" id="feminino" name="sexo" value="Feminino" required>
-            <label for="feminino">Feminino</label><br>
-        </fieldset><br>
+            <label for="feminino">Feminino</label>
+        </fieldset>
         
       
         
-        <fieldset>
+        <fieldset class = "cadmeio">
             <legend>Segurança</legend>
             
-            <label for="senha">Senha:</label><br>
-            <input type="password" id="senha" name="senha" required class="cadmeio"><br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required class="cadmeio">
         
       
         
         
-          <label for="confirmacao">Confirme sua senha:</label><br>
-          <input type="password" id="confirmacao" name="confirmacao" required class="cadmeio"><br><br>
+          <label for="confirmacao">Confirme sua senha:</label>
+          <input type="password" id="confirmacao" name="confirmacao" required class="cadmeio">
         </fieldset>
 
         
@@ -77,11 +83,12 @@
         </fieldset>
         
       </form>
-    </section>
+    </div>
+    
   </main>
       <br><br>
       
-      <footer style="padding: 30px;">&copy;
+      <footer style="padding: 30px;" class="rodape">&copy;
         Desenvolvido por <strong>Gustavo Martins</strong>, <strong>José Gabriel</strong> e <strong>Tiago lemes</strong>. Todos os direitos reservados.
       </footer>
       
