@@ -6,36 +6,24 @@
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilo/style.css">
     <title>Galeria</title>
-    <style>
-    div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-img{
-    border: 10px solid gray;
-    box-shadow: 0px 0px 15px black;
-}
-p,h1,nav{
-    text-align: center;
-}
-    
-
-    </style>
-    
 </head>
 <body>
     
-    <nav id="navi">
-        <a href="../entrada.html" class="navl">Login</a>
-        <a href="../paginas/menu.html" class="navl">Menu</a>
-        <a href="../paginas/pacotes.html" class="navl">Pacotes</a>
-        <a href="../paginas/minhas-fotos.html" class="navl">Minhas Fotos</a>    
-        <a href="../paginas/galeria.html" class="navl">Galeria</a>
-        <a href="sobre-nos.html" class="navl">Sobre-nós</a>
-    </nav>
+    <header class="nav-bar">
+
+        <a  href="menu.html" class="clic-logo">Clic Wr Filmes</a >
+          
+        <nav class="nav">
+            <a class="link-nav" href="menu.html">Menu</a>
+            <a class="link-nav" href="pacotes.html">Pacotes</a>
+            <a class="link-nav" href="minhas-fotos.html">Minhas Fotos</a>
+            <a href="galeria.html" class="nav-active" >Galeria<a>
+            <a class="link-nav" href="sobre-nos.html">Sobre-nós</a>
+            <a class="link-nav" href="../entrada.html">Sair</a>
+        </nav>
+
+    </header>
+    
     <main>
     <section>
     <h1>Galeria de Imagens</h1>
@@ -54,6 +42,10 @@ p,h1,nav{
         <img src="../imagens/imgmaestro.jpeg" alt="Imagem">
     </div>
     </section>
+
+    <footer class="rodape">
+    <p>&copy; 2025 | Desenvolvido por Gustavo Martins, José Gabriel e Tiago Lemes. Todos os direitos reservados</footer><p>
+  </footer>
     </main>
 </body>
 </html>

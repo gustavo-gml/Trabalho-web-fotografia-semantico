@@ -6,51 +6,84 @@
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilo/style.css">
     <title>Pacotes</title>
+     <style>
+        
+    </style>
     
 </head>
 <body>
-    <header>
-        
-        <nav id="navi">
-            <a href="../entrada.html" class="navl">Login</a>
-            <a href="../paginas/menu.html" class="navl">Menu</a>
-            <a href="../paginas/pacotes.html" class="navl">Pacotes</a>
-            <a href="../paginas/minhas-fotos.html" class="navl">Minhas Fotos</a>    
-            <a href="../paginas/galeria.html" class="navl">Galeria</a>
-            <a href="sobre-nos.html" class="navl">Sobre-nós</a>
-            
-        <h1>Bem-vindo à página de Pacotes</h1>
-                
-        </nav>
-    </header>
-    <main>
-        <p>Todos os nossos pacotes são entregues por meio de uma caixa de madeira personalizada, que contén um pendrive com os arquivos digitais e fotografias (caso requisitado)</p><br>
-        <img src="../imagens/caixa-de-madeira.jpg" alt="caixa de madeira personalizada">
-        
-        
-        <ol> 
-            <li>
-              <strong>Pacote Básico</strong><br>
-              Making of da noiva e do noivo + Filme do casamento:<br>
-              Ideal para registrar um dos momentos mais importantes da sua vida.
-            </li>
-            
-            <li>
-              <strong>Pacote Intermediário</strong><br>
-              Making of da noiva e do noivo + Filme do casamento + After party:<br>
-              Além de registrarmos o seu momento especial, também captamos a alegria daqueles que são importantes para você.
-            </li>
+    <header class="nav-bar">
+
+        <a  href="menu.html" class="clic-logo">Clic Wr Filmes</a >
           
-            <li>
-              <strong>Pacote Completo</strong><br>
-              Making of da noiva e do noivo + Filme do casamento + After party + Fotografias:<br>
-              O nosso pacote completo é ideal para guardar todos os momentos do seu grande dia. Além de todos os registros de vídeo, vamos eternizar os melhores momentos com fotografias incríveis!
-            </li>
-          </ol>
+            <nav class="nav">
+            <a class="link-nav" href="menu.html">Menu</a>
+            <a class="nav-active" href="pacotes.html">Pacotes</a>
+            <a class="link-nav" href="minhas-fotos.html">Minhas Fotos</a><a href="galeria.html" class="link-nav">Galeria<a>
+            <a class="link-nav" href="sobre-nos.html">Sobre-nós</a>
+            <a class="link-nav" href="../entrada.html">Sair</a>        
+        </nav>
+        
+    </header>
+
+    
+    <main>
+      
+      <h2 id="h2-pac">Nossos pacotes</h2>
+
+        <p class="p-pact">Todos os nossos pacotes são entregues por meio de uma caixa de madeira personalizada, que contén um pendrive com os arquivos digitais e fotografias (caso requisitado).</p>
+        
+        <div >
+          <img src="../imagens/caixa de madeira.jpg" alt="tauba" class="caixa-img">
+          
+        </div>
+        
+      <div class = "conjunto-containers">
+          
+          
+          
+          <div class="pacote-card">
+            <h3  class="pacote-h3">Pacote Basíco</h3>
+              <ul>
+                  <li>Making of da noiva e do noivo + Filme do casamento:</li>
+                  <li>Ideal para registrar um dos momentos mais importantes da sua vida.</li>
+              </ul>
+            <p class="p-pacot">Ideal para registrar os momentos mais importantes da sua cerimônia e celebração.</p>
+            <button class="button-submit-cad" onclick="window.location.href='sobre-nos.html'">Solicite seu orçamento</button>
+            
+          </div>
+
+          <div class="pacote-card">
+            <h3 class="pacote-h3">Pacote Intermediário</h3>
+            <ul>
+                <li>Making of da noiva e do noivo + Filme do casamento + After party:</li>
+                <li>Além de registrarmos o seu momento especial, também captamos a alegria daqueles que são importantes para você.</li>
+            </ul>
+            <p class="p-pacot">Além do seu momento especial, captamos também a alegria contagiante dos seus convidados.</p>
+            <button class="button-submit-cad" onclick="window.location.href='sobre-nos.html'">Solicite seu orçamento</button>
+          </div>
+          
+          <div class="pacote-card">
+          <h3 class="pacote-h3">Pacote Completo</h3>
+          <ul>
+              <li>Making of da noiva e do noivo</li>
+              <li>Filme do casamento</li>
+              <li>Filmagens da festa (After party)</li> 
+              <li>Fotografias profissionais</li>
+            </ul>
+            <p class="p-pacot">A experiência definitiva para eternizar cada detalhe do seu grande dia em vídeo e fotos incríveis.</p>
+            <button class="button-submit-cad" onclick="window.location.href='sobre-nos.html'">Solicite seu orçamento</button>
+            
+          </div>
+          
+        
+        
+      </div>
+        
     </main>
     
-    <footer style="padding: 30px;">&copy;
-        Desenvolvido por <strong>Gustavo Martins</strong>, <strong>José Gabriel</strong> e <strong>Tiago lemes</strong>. Todos os direitos reservados.
-     </footer>
+    <footer class="rodape">
+    <p>&copy; 2025 | Desenvolvido por Gustavo Martins, José Gabriel e Tiago Lemes. Todos os direitos reservados</footer><p>
+  </footer>
 </body>
 </html>
