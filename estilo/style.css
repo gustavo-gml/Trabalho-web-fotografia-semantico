@@ -465,6 +465,9 @@ margin-bottom:2%;
     /* Efeito de transição */
     transition: transform 0.5s, border-color 0.5s, box-shadow 0.5s;
 }
+.pacote-card li{
+    list-style-type:none;
+}
 
 #h2-pac{
     text-align: center;
