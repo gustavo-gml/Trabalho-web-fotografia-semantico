@@ -68,7 +68,7 @@ overflow-wrap: break-word;
 .formulario{
     color: black;
     background-color: white;
-    width: 50%;
+    width: 35%;
     margin: auto;
     padding: 3%;
     max-width: 700px;
@@ -146,23 +146,32 @@ overflow-wrap: break-word;
  margin-bottom: 10px;
 cursor: pointer;
 border: 0px;
+transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+.button-submit:hover{
+    border: solid #000000;
+    border-radius: 2px;
 }
 
 .button-submit-cad{
  background-color: #D4AF37;
- color: white;
- text-shadow: 1px 1px 1px black;
- font-size: 1.7rem;
+ color: rgb(0, 0, 0);
+ text-shadow: 1px 1px 1px #9f9f9f;
+ font-size: large;
  margin: 3% 0%;
  display: block;
  border-radius: 3px;
  padding: 5%;
  width: 100%;
  margin-bottom: 10px;
-cursor: pointer;
-border: 0px;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
-
+ cursor: pointer;
+ border: 0px;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+ transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+.button-submit-cad:hover{
+    border: solid #000000;
+    border-radius: 2px;
 }
 
 
@@ -210,9 +219,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
     transition: 0.5s;
     text-shadow: 1px 1px 1px black;
     color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329)
-    
-     
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329)  
 }
 
 
@@ -225,10 +232,9 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
 }
 
 .links{
-     text-decoration: none;
-     color:#D4AF37;
-     text-shadow: 1px 1px 1px black;
-    
+    text-decoration: none;
+    color:#D4AF37;
+    text-shadow: 1px 1px 1px black;
     
 }
 
@@ -332,6 +338,11 @@ color: #D4AF37;
 
 #p-menu{
     line-height: 2rem;
+    white-space: pre-wrap; 
+    display: block; 
+    width: 80%;    
+    max-width: 900px; 
+    margin: 0 auto;
 }
 /*menu*/
 
@@ -438,11 +449,10 @@ margin-bottom:2%;
 
 .conjunto-containers {
     display: flex;
-    /* justify-content: space-between;  (opcional, 'gap' já faz um bom trabalho) */
     align-items: stretch; /* 'stretch' é o padrão e garante a mesma altura, está correto! */
     flex-wrap: wrap; /* Correção: a propriedade é 'flex-wrap' e não 'flex: wrap' */
     gap: 2rem;
-    width: 80%;
+    width: 85%;
     margin: auto;
     padding: 2% 0%;
 }
@@ -466,11 +476,11 @@ margin-bottom:2%;
     transition: transform 0.5s, border-color 0.5s, box-shadow 0.5s;
 }
 .pacote-card li{
-    list-style-type:circle;
+    
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 0; 
+    padding-left: 0%; 
     padding: 5% 0 5% 0;
 }
 
@@ -501,25 +511,31 @@ margin-bottom:2%;
 }
 
 .p-pacot {
-    padding: 10% 0%;
-    text-align: center;
-    margin-top: auto; 
+    padding: 1rem 0%;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: 1rem; 
 }
 
 /* etc... */
 
 .button-pac {
-    background-color: #D4AF37;
-    color: white;
+    background-color: #000000;
+    color: #D4AF37;
     text-shadow: 1px 1px 1px black;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     display: block;
     border-radius: 3px;
     padding: 15px; /* É melhor usar 'px' para padding em botões, para consistência */
     width: 100%;
     cursor: pointer;
-    border: 0px;
+    border: 1px solid gold;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329); 
+}
+.button-pac:hover{
+    background-color: #D4AF37;
+    color:#000000;
+    box-shadow: 0px 0px 10px #D4AF37;
 }
 
 
