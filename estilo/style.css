@@ -460,13 +460,19 @@ margin-bottom:2%;
 
     /* Melhor que 'width: 50%', 'flex: 1' faz os cards dividirem o espaço igualmente */
     flex: 1; 
+    flex-grow: 1;
     min-width: 280px; /* Adiciona uma largura mínima para evitar que fiquem muito estreitos */
-
+    
     /* Efeito de transição */
     transition: transform 0.5s, border-color 0.5s, box-shadow 0.5s;
 }
 .pacote-card li{
-    list-style-type:none;
+    list-style-type:circle;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0; 
+    padding: 5% 0 5% 0;
 }
 
 #h2-pac{
@@ -498,6 +504,8 @@ margin-bottom:2%;
 .p-pacot {
     padding: 10% 0%;
     text-align: center;
+    margin-top: auto;
+   
 }
 
 /* etc... */
@@ -514,7 +522,7 @@ margin-bottom:2%;
     cursor: pointer;
     border: 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
-    margin-top: auto; /* Garante que ele seja empurrado para o final */
+     
 }
 
 
